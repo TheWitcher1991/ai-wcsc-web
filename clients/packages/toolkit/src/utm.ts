@@ -1,5 +1,3 @@
-import { UTMSource } from "@fgis/types"
-
 class UTMBuilder {
 	private baseUrl: string
 	private params: Map<string, string> = new Map()
@@ -8,7 +6,7 @@ class UTMBuilder {
 		this.baseUrl = url
 	}
 
-	public source(value: UTMSource): this {
+	public source(value: string): this {
 		this.params.set('utm_source', value)
 		return this
 	}

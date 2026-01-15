@@ -1,3 +1,4 @@
+import React from 'react'
 import type { JSXElementConstructor } from 'react'
 
 declare module '*.css'

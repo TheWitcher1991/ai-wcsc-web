@@ -1,4 +1,4 @@
-import { Nullable } from '@fgis/types'
+import { Nullable } from '@wcsc/types'
 
 export function format(date: Date, formatStr: string): string {
 	const pad = (n: number, width = 2) => n.toString().padStart(width, '0')

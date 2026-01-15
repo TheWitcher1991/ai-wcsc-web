@@ -1,7 +1,7 @@
 import { prepareRequestParams } from '../fn'
 import { HttpClientInstance } from '../http'
 
-import type { Dictionary, RequestResponse } from '@fgis/types'
+import type { Dictionary, RequestResponse } from '@wcsc/types'
 
 import { BaseRepository } from './base'
 

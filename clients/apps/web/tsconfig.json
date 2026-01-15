@@ -1,6 +1,10 @@
 {
-    "extends": "@fgis/typescript-config/nextjs.json",
+    "extends": [
+      "@wcsc/typescript-config/nextjs.json",
+      "@gravity-ui/tsconfig/tsconfig"
+    ],
     "compilerOptions": {
+      "jsx": "react",
       "paths": {
         "~*": ["./src/*"],
         "~public/*": ["./public/*"]

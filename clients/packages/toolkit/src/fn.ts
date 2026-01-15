@@ -1,11 +1,11 @@
-import type { Branded, PagesListResponse, Paginated } from '@fgis/types'
+import type { Branded, PagesListResponse, Paginated, ModelConfig } from '@wcsc/types'
 import type { InfiniteData } from '@tanstack/react-query'
 import type { AxiosResponse } from 'axios'
 
-export const modelConfig = (alias: string) => ({
+export const modelConfig = <T extends string>(alias: T): ModelConfig<T> => ({
 	model: alias,
-	models: `${this.model}s`,
-	infiniteModels: `infinite-${this.models}`,
+	models: `${alias}s` as `${T}s`,
+	infiniteModels: `infinite-${alias}s` as `infinite-${T}s`,
 })
 
 export const openLink = (link: string, target?: string) => {

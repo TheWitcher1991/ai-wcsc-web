@@ -1,4 +1,4 @@
-import { Nullable } from '@fgis/types'
+import { Nullable } from '@wcsc/types'
 
 export const getVideoDurationInSeconds = async (
 	file: Nullable<File>,

@@ -1,4 +1,4 @@
-import { pluralize } from '@fgis/toolkit'
+import { pluralize } from '@wcsc/toolkit'
 
 import { useMemoizedFn } from './use-memoized-fn'
 

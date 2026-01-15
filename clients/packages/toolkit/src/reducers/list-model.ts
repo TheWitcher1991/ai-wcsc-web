@@ -1,7 +1,7 @@
 import { createEvent, createStore, sample } from 'effector'
 import { ChangeEvent } from 'react'
 
-import { Dictionary, ModelListField } from '@fgis/types'
+import { Dictionary, ModelListField } from '@wcsc/types'
 
 export const createModelListApi = <T, U extends Dictionary<any>>(
 	initialState: ModelListField<T, Partial<U>>,

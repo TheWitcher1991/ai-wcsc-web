@@ -1,6 +1,5 @@
+import { Nullable } from '@wcsc/types'
 import { useState } from 'react'
-
-import { Nullable } from '@fgis/types'
 
 import { useMemoizedFn } from './use-memoized-fn'
 

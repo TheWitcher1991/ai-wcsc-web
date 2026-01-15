@@ -6,7 +6,7 @@ import {
 	useQuery,
 } from '@tanstack/react-query'
 
-import { type Dictionary, Paginated } from '@fgis/types'
+import { type Dictionary, Paginated } from '@wcsc/types'
 
 import { HttpClientInstance } from './http'
 import { optimisticInvalidateQueries } from './react-query'

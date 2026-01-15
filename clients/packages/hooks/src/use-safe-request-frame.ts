@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useRef } from 'react'
+import { useRef } from 'react'
 
 import { useMemoizedFn } from './use-memoized-fn'
 

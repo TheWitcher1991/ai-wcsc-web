@@ -23,3 +23,7 @@ export const JWT_HEADER = 'jwt'
 export const JWT_REFRESH_HEADER = 'jwt-refresh'
 
 export const AUTH_HEADER_KEY = 'Bearer'
+
+export const isBrowser = typeof window !== 'undefined'
+
+export const isNavigator = typeof navigator !== 'undefined'

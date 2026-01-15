@@ -1,4 +1,4 @@
-import type { AxiosResponse, AxiosError } from 'axios'
+import type { AxiosError, AxiosResponse } from 'axios'
 import React from 'react'
 import type { ObjectSchema } from 'valibot'
 
@@ -29,9 +29,9 @@ export type OrderDirection = 'ASC' | 'DESC'
 export type LogLevel = 'log' | 'warn' | 'error'
 
 export type MergeObjectEntries<T extends ObjectSchema<any, any>[]> =
-		UnionToIntersection<
-			T[number] extends ObjectSchema<infer R, any> ? R : never
-		>
+	UnionToIntersection<
+		T[number] extends ObjectSchema<infer R, any> ? R : never
+	>
 
 export type InjectProps<
 	Key extends string,
@@ -55,10 +55,18 @@ export interface ErrorObject {
 
 export type ErrorList = ErrorObject[]
 
-type ModelConfig<T extends string> = {
+export type ModelConfig<T extends string> = {
 	model: T
 	models: `${T}s`
 	infiniteModels: `infinite-${T}s`
+}
+
+export interface UTMParams {
+	source: string
+	medium?: string
+	campaign?: string
+	content?: string
+	term?: string
 }
 
 export interface Paginated<RESULTS = [], META = Record<string, any>> {
@@ -70,12 +78,17 @@ export interface Paginated<RESULTS = [], META = Record<string, any>> {
 	results: RESULTS[]
 }
 
+export interface PaginationPageSize {
+	page: number
+	page_size: number
+}
+
 export interface PaginateQuery<
-		ORDERING extends string = string,
-	> extends PaginationPageSize {
-		query: string
-		ordering: ORDERING
-	}
+	ORDERING extends string = string,
+> extends PaginationPageSize {
+	query: string
+	ordering: ORDERING
+}
 
 export interface PagesListResponse<T> {
 	pages: Paginated<T>[]

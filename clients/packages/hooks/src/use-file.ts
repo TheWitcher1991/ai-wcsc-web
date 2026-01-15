@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react'
 
-import { fileToBase64 } from '@ekran/toolkit'
-import { Nullable } from '@ekran/types'
+import { fileToBase64 } from '@wcsc/toolkit'
+import { Nullable } from '@wcsc/types'
 
 import { useMemoizedFn } from './use-memoized-fn'
 

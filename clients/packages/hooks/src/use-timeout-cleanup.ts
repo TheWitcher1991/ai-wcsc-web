@@ -1,6 +1,5 @@
+import { Nullable, Timeout } from '@wcsc/types'
 import { useEffect, useRef } from 'react'
-
-import { Nullable, Timeout } from '@fgis/types'
 
 import { useMemoizedFn } from './use-memoized-fn'
 
