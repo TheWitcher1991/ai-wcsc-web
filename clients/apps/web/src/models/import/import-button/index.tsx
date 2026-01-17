@@ -3,7 +3,7 @@ import { Button, Icon } from '@gravity-ui/uikit'
 
 export const ImportButton = () => {
 	return (
-		<Button view={'action'}>
+		<Button view={'normal'}>
 			<Icon data={ArrowDownToSquare} size={16} />
 			Импорт датасета
 		</Button>
