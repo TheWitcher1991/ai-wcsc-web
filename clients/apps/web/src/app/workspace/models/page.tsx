@@ -3,7 +3,7 @@
 import {
 	BarsDescendingAlignLeftArrowDown,
 	Briefcase,
-	Bulb,
+	Flask,
 	Clock,
 	GearBranches,
 	GripHorizontal,
@@ -54,7 +54,7 @@ export default function Models() {
 				alignItems={'center'}
 			>
 				<ValueCard value={0} title={'Моделей'} icon={Molecule} />
-				<ValueCard value={0} title={'Экспериментов'} icon={Bulb} />
+				<ValueCard value={0} title={'Экспериментов'} icon={Flask} />
 				<ValueCard value={0} title={'Затрачено'} icon={Clock} />
 				<ValueCard value={0} title={'Инференсов'} icon={Briefcase} />
 			</Flex>

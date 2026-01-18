@@ -48,4 +48,6 @@ export const href = {
 	models: hrefFactory('workspace/models'),
 
 	users: hrefFactory('workspace/users'),
+
+	guards: hrefFactory('workspace/guards'),
 }

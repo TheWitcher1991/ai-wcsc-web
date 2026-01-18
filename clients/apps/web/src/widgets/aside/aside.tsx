@@ -32,7 +32,6 @@ export default function Aside({ children }: PropsWithChildren) {
 			headerDecoration={true}
 			renderContent={() => children}
 			multipleTooltip={true}
-			editMenuProps={{ enableSorting: true }}
 			menuItems={menuItems}
 			renderFooter={() => footer}
 		/>

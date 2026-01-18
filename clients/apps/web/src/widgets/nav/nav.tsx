@@ -9,7 +9,7 @@ import { DepartmentButton } from '~features/department'
 import Notifications from '~features/notifications'
 import { ThemeButton } from '~features/shared'
 
-import { ImportButton } from '~models/import'
+import { ImportButton } from '~features/import'
 
 import { Breadcrumbs } from '~packages/ui'
 

@@ -9,13 +9,13 @@ import { href } from '@wcsc/href'
 
 export default function Imports() {
 	useMount(() =>
-		setBreadcrumbs([{ text: 'Импорты', href: href.imports.index }]),
+		setBreadcrumbs([{ text: 'Разметка', href: href.imports.index }]),
 	)
 
 	return (
 		<Group>
 			<PageTitle
-				title={'Импорты'}
+				title={'Разметка'}
 				subtitle={
 					'Панель мониторинга и управления ключевыми метриками системы'
 				}

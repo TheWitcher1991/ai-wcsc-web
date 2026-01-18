@@ -1,10 +1,12 @@
 import {
 	ArrowDownToSquare,
 	BookOpen,
-	Cubes3,
+	Cubes3Overlap,
+	DatabaseMagnifier,
 	House,
 	Molecule,
 	Persons,
+	Shield,
 	SquareDashedCircle,
 } from '@gravity-ui/icons'
 import { MenuItem } from '@gravity-ui/navigation'
@@ -25,7 +27,6 @@ export default function useMenuItems(): MenuItem[] {
 			current: pathname === href.workspace,
 			onItemClick: () => router.push(href.workspace),
 		},
-
 		{
 			id: 'directory',
 			title: 'Справочник',
@@ -35,26 +36,26 @@ export default function useMenuItems(): MenuItem[] {
 			onItemClick: () => router.push(href.directory.index),
 		},
 		{
-			id: 'imports',
-			iconSize: 20,
-			title: 'Импорт',
-			icon: ArrowDownToSquare,
-			current: pathname.startsWith(href.imports.index),
-			onItemClick: () => router.push(href.imports.index),
-		},
-		{
 			id: 'projects',
 			title: 'Проекты',
-			icon: Cubes3,
+			icon: Cubes3Overlap,
 			iconSize: 20,
 			current: pathname.startsWith(href.projects.index),
 			onItemClick: () => router.push(href.projects.index),
 		},
 		{
+			id: 'imports',
+			iconSize: 20,
+			title: 'Разметка',
+			icon: SquareDashedCircle,
+			current: pathname.startsWith(href.imports.index),
+			onItemClick: () => router.push(href.imports.index),
+		},
+		{
 			id: 'datasets',
 			iconSize: 20,
 			title: 'Датасеты',
-			icon: SquareDashedCircle,
+			icon: DatabaseMagnifier,
 			current: pathname.startsWith(href.datasets.index),
 			onItemClick: () => router.push(href.datasets.index),
 		},

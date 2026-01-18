@@ -4,11 +4,11 @@ export default function DepartmentButton() {
 	return (
 		<Select
 			disabled
-			value={['Проект «Теплицы»']}
+			value={['Направление «Теплицы»']}
 			options={[
 				{
-					content: 'Проект «Теплицы»',
-					value: 'Проект «Теплицы»',
+					content: 'Направление «Теплицы»',
+					value: 'Направление «Теплицы»',
 				},
 			]}
 			title={'Выберите рабочее пространство'}
